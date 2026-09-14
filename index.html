@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immo Angers < 125k€</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+  <header>
+    <h1>Immo Angers (&lt; 125k€)</h1>
+    <button id="refresh-btn">🔄 Actualiser</button>
+  </header>
+
+  <main>
+    <section class="filters">
+      <label for="agency-select">Filtrer par agence :</label>
+      <select id="agency-select">
+        <option value="all">Toutes les agences</option>
+      </select>
+    </section>
+
+    <div id="status-message">Chargement des annonces...</div>
+    <section id="listings-container" class="grid"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
